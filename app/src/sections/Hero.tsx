@@ -57,14 +57,13 @@ export function Hero() {
     <section
       id="hero"
       ref={containerRef}
-      className="relative min-h-screen flex items-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center overflow-hidden pt-24 lg:pt-28"
     >
-      {/* Animated Gradient Mesh Background */}
       <div className="absolute inset-0 gradient-mesh-hero" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent" />
 
-      {/* Floating Blobs */}
       <motion.div
-        className="absolute top-20 left-10 w-72 h-72 bg-primary-200/40 rounded-full blur-3xl"
+        className="absolute top-20 left-10 w-72 h-72 bg-primary-200/35 rounded-full blur-3xl"
         animate={{
           x: [0, 40, 0],
           y: [0, -30, 0],
@@ -77,7 +76,7 @@ export function Hero() {
         }}
       />
       <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-primary-100/50 rounded-full blur-3xl"
+        className="absolute bottom-20 right-10 w-96 h-96 bg-primary-100/45 rounded-full blur-3xl"
         animate={{
           x: [0, -30, 0],
           y: [0, 40, 0],
@@ -90,7 +89,7 @@ export function Hero() {
         }}
       />
       <motion.div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary-50/30 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary-50/25 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.3, 1],
           opacity: [0.3, 0.5, 0.3],
@@ -98,13 +97,10 @@ export function Hero() {
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      {/* Noise Texture Overlay */}
       <div className="absolute inset-0 noise-overlay opacity-50" />
 
-      {/* Main Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-0">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Content */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div
             variants={heroStagger}
             initial="hidden"
@@ -113,17 +109,15 @@ export function Hero() {
           >
             <motion.div
               variants={heroTextReveal}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100/80 backdrop-blur-sm border border-primary-200/50 mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/70 backdrop-blur-sm border border-primary-200/60 mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm font-medium text-primary-600">
-                Humanity, Respect, and Care
-              </span>
+              <span className="text-sm font-medium text-primary-600">Humanity, Respect, and Care</span>
             </motion.div>
 
             <motion.h1
               variants={heroTextReveal}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-accent"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-accent"
             >
               Support that feels{' '}
               <span className="relative inline-block">
@@ -157,11 +151,25 @@ export function Hero() {
 
             <motion.p
               variants={heroTextReveal}
-              className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed"
+              className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
               Mume Care offers practical help, social companionship, and reliable everyday support for
               elderly people, individuals living at home, and families who need relief.
             </motion.p>
+
+            <motion.div
+              variants={heroTextReveal}
+              className="mt-6 flex flex-wrap gap-2 justify-center lg:justify-start"
+            >
+              {['Home assistance', 'Social support', 'Errands and routines'].map((item) => (
+                <span
+                  key={item}
+                  className="px-3 py-1.5 rounded-full text-sm bg-white/70 border border-border text-accent"
+                >
+                  {item}
+                </span>
+              ))}
+            </motion.div>
 
             <motion.div
               variants={heroTextReveal}
@@ -176,46 +184,27 @@ export function Hero() {
               </AnimatedButton>
             </motion.div>
 
-            {/* Trust Indicators */}
             <motion.div
               variants={heroTextReveal}
-              className="mt-12 flex items-center gap-6 justify-center lg:justify-start"
+              className="mt-10 grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0"
             >
-              <div className="flex -space-x-3">
-                {[1, 2, 3].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white bg-primary-100 overflow-hidden shadow-md"
-                  >
-                    <img
-                      src={`/caregiver-${i}.jpg`}
-                      alt={`Caregiver ${i}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ))}
-                <div className="w-10 h-10 rounded-full border-2 border-white bg-primary flex items-center justify-center shadow-md">
-                  <span className="text-xs font-bold text-white">+150</span>
-                </div>
+              <div className="rounded-2xl bg-white/75 border border-border px-3 py-3 text-center">
+                <p className="text-xl font-bold text-accent">M</p>
+                <p className="text-xs text-muted-foreground">Humanity</p>
               </div>
-              <div className="text-left">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <svg key={i} className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-sm text-muted-foreground mt-0.5">
-                  <span className="font-semibold text-accent">MUME CARE</span> support you can trust
-                </p>
+              <div className="rounded-2xl bg-white/75 border border-border px-3 py-3 text-center">
+                <p className="text-xl font-bold text-accent">U</p>
+                <p className="text-xs text-muted-foreground">Development</p>
+              </div>
+              <div className="rounded-2xl bg-white/75 border border-border px-3 py-3 text-center">
+                <p className="text-xl font-bold text-accent">M</p>
+                <p className="text-xs text-muted-foreground">Motivation</p>
               </div>
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Image Composition */}
           <motion.div
-            className="relative h-[500px] lg:h-[600px] perspective-1000"
+            className="relative h-[520px] lg:h-[620px] perspective-1000"
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
@@ -224,10 +213,15 @@ export function Hero() {
               rotateY: useTransform(rotateY, (v) => v * 0.5),
             }}
           >
-            {/* Main Image */}
             <motion.div
-              className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-premium-lg"
-              whileHover={{ scale: 1.02 }}
+              className="absolute inset-0 rounded-[2rem] bg-white/40 border border-white/60 shadow-premium-lg"
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+            />
+
+            <motion.div
+              className="relative z-10 w-full h-full rounded-[2rem] overflow-hidden shadow-premium-lg"
+              whileHover={{ scale: 1.01 }}
               transition={{ duration: 0.5 }}
             >
               <img
@@ -235,13 +229,11 @@ export function Hero() {
                 alt="Compassionate caregiver with elderly patient"
                 className="w-full h-full object-cover"
               />
-              {/* Subtle gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-accent/30 via-transparent to-transparent" />
             </motion.div>
 
-            {/* Floating Cards */}
             <FloatingCard
-              className="top-4 -left-4 sm:-left-8 px-4 py-3 flex items-center gap-3"
+              className="top-6 -left-4 sm:-left-8 px-4 py-3 flex items-center gap-3"
               delay={0.8}
             >
               <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -254,7 +246,7 @@ export function Hero() {
             </FloatingCard>
 
             <FloatingCard
-              className="bottom-20 -right-4 sm:-right-8 px-4 py-3 flex items-center gap-3"
+              className="bottom-24 -right-4 sm:-right-8 px-4 py-3 flex items-center gap-3"
               delay={1.2}
             >
               <div className="w-10 h-10 rounded-xl bg-[#76A83B]/20 flex items-center justify-center">
@@ -267,7 +259,7 @@ export function Hero() {
             </FloatingCard>
 
             <FloatingCard
-              className="bottom-4 left-8 px-4 py-3 flex items-center gap-3"
+              className="bottom-6 left-8 px-4 py-3 flex items-center gap-3"
               delay={1.6}
             >
               <div className="w-10 h-10 rounded-xl bg-[#5A9D3A]/20 flex items-center justify-center">
@@ -279,14 +271,13 @@ export function Hero() {
               </div>
             </FloatingCard>
 
-            {/* Decorative Elements */}
             <motion.div
-              className="absolute -top-6 -right-6 w-24 h-24 bg-primary-200/50 rounded-2xl -z-10"
-              animate={{ rotate: [0, 10, 0] }}
+              className="absolute -top-5 -right-5 w-20 h-20 rounded-2xl bg-primary-200/45 -z-10"
+              animate={{ rotate: [0, 12, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.div
-              className="absolute -bottom-6 -left-6 w-20 h-20 bg-primary-100/60 rounded-full -z-10"
+              className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full bg-primary-100/65 -z-10"
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
             />
@@ -294,26 +285,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2, duration: 0.8 }}
-      >
-        <span className="text-xs text-muted-foreground">Scroll to explore</span>
-        <motion.div
-          className="w-6 h-10 rounded-full border-2 border-primary-300 flex justify-center pt-2"
-          animate={{ y: [0, 5, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <motion.div
-            className="w-1.5 h-1.5 rounded-full bg-primary"
-            animate={{ y: [0, 12, 0], opacity: [1, 0.3, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-        </motion.div>
-      </motion.div>
+    
     </section>
   );
 }

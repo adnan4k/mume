@@ -101,7 +101,7 @@ function ServiceCard({
             alt={service.title}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className={cn('absolute inset-0 bg-gradient-to-t opacity-80', service.color)} />
+          <div className={cn('absolute inset-0  opacity-80', service.color)} />
           
           {/* Icon Badge */}
           <div className="absolute top-4 left-4 w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center">
