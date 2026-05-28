@@ -89,9 +89,7 @@ export function Navbar() {
                 <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-glow">
                   <Heart className="w-5 h-5 text-white" fill="white" />
                 </div>
-                <span className="text-xl font-bold text-white tracking-tight">
-                  Medora
-                </span>
+                <span className="text-xl font-bold text-white tracking-tight">MUME CARE</span>
               </motion.a>
 
               {/* Desktop Navigation */}
@@ -128,7 +126,7 @@ export function Navbar() {
               {/* CTA Button */}
               <div className="hidden lg:block">
                 <AnimatedButton size="sm" href="#cta">
-                  Get Started
+                  Contact Us
                 </AnimatedButton>
               </div>
 
@@ -203,7 +201,7 @@ export function Navbar() {
                     className="w-full"
                     onClick={() => handleNavClick('#cta')}
                   >
-                    Get Started
+                    Contact Us
                   </AnimatedButton>
                 </div>
               </div>

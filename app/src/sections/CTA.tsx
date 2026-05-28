@@ -53,7 +53,7 @@ export function CTA() {
           >
             <Sparkles className="w-4 h-4 text-primary-200" />
             <span className="text-sm font-medium text-white/90">
-              Begin Your Care Journey Today
+              MUME CARE'S AMBITION
             </span>
           </motion.div>
 
@@ -62,11 +62,11 @@ export function CTA() {
             variants={staggerItem}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight"
           >
-            Give your loved ones
+            A safer, warmer,
             <br />
-            the care they{' '}
+            and easier everyday life{' '}
             <span className="relative inline-block">
-              deserve
+              for everyone
               <motion.svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 200 12"
@@ -90,8 +90,8 @@ export function CTA() {
             variants={staggerItem}
             className="mt-6 text-lg text-white/80 max-w-2xl mx-auto leading-relaxed"
           >
-            Join thousands of families who trust Medora for compassionate, professional healthcare. 
-            Schedule a free consultation and discover how we can help your family thrive.
+            We want to help elderly people and families through care, practical assistance, and social support.
+            Our vision is less loneliness, greater security, and better quality of life.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -105,7 +105,7 @@ export function CTA() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
-              Schedule Free Consultation
+              Contact Mume Care
               <ArrowRight className="w-5 h-5" />
             </motion.a>
             <motion.a
@@ -114,7 +114,7 @@ export function CTA() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
-              Call (123) 456-7890
+              Call for Assistance
             </motion.a>
           </motion.div>
 
@@ -125,15 +125,15 @@ export function CTA() {
           >
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-400" />
-              Free consultation
+              Practical home support
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-400" />
-              No commitment required
+              Social companionship
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-400" />
-              Available 24/7
+              Respect and reliable service
             </div>
           </motion.div>
         </motion.div>

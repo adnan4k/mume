@@ -4,15 +4,15 @@ import { useState } from 'react';
 
 const footerLinks = {
   services: [
-    { label: 'In-Home Care', href: '#services' },
-    { label: 'Health Monitoring', href: '#services' },
-    { label: 'Recovery Support', href: '#services' },
-    { label: 'Memory Care', href: '#services' },
-    { label: 'Respite Care', href: '#services' },
+    { label: 'Morning and Evening Care', href: '#services' },
+    { label: 'Cleaning Assistance', href: '#services' },
+    { label: 'Shopping and Errands', href: '#services' },
+    { label: 'Simple Technical Help', href: '#services' },
+    { label: 'Daily Routine Support', href: '#services' },
   ],
   company: [
     { label: 'About Us', href: '#about' },
-    { label: 'Our Caregivers', href: '#about' },
+    { label: 'Our Team', href: '#about' },
     { label: 'Testimonials', href: '#testimonials' },
     { label: 'Careers', href: '#' },
     { label: 'Blog', href: '#' },
@@ -20,7 +20,7 @@ const footerLinks = {
   support: [
     { label: 'FAQ', href: '#faq' },
     { label: 'Contact Us', href: '#cta' },
-    { label: 'Insurance', href: '#' },
+    { label: 'Technical Partners', href: '#' },
     { label: 'Resources', href: '#' },
     { label: 'Privacy Policy', href: '#' },
   ],
@@ -63,27 +63,27 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-glow">
                 <Heart className="w-5 h-5 text-white" fill="white" />
               </div>
-              <span className="text-2xl font-bold tracking-tight">Medora</span>
+              <span className="text-2xl font-bold tracking-tight">MUME CARE</span>
             </motion.a>
 
             <p className="text-white/60 max-w-md leading-relaxed mb-8">
-              Premium healthcare services with personalized care, wellness monitoring, 
-              and 24/7 support for you and your family. Because everyone deserves care that feels like family.
+              We provide care, practical assistance, and social support for elderly people and families
+              who need extra help in everyday life.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3 mb-8">
-              <a href="mailto:hello@medora.care" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
+              <a href="mailto:hello@mumecare.no" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
-                hello@medora.care
+                hello@mumecare.no
               </a>
               <a href="tel:+1234567890" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                (123) 456-7890
+                +47 000 00 000
               </a>
               <div className="flex items-center gap-3 text-white/60">
                 <MapPin className="w-4 h-4" />
-                123 Care Street, Health City, HC 12345
+                Oslo, Norway
               </div>
             </div>
 
@@ -163,9 +163,9 @@ export function Footer() {
         <div className="p-6 sm:p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
-              <h4 className="text-lg font-semibold mb-1">Stay updated with Medora</h4>
+              <h4 className="text-lg font-semibold mb-1">Stay updated with Mume Care</h4>
               <p className="text-sm text-white/50">
-                Get caregiving tips, health insights, and company news delivered to your inbox.
+                Get updates about our services, values, and practical support for families.
               </p>
             </div>
             {subscribed ? (
@@ -208,7 +208,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/40">
-            &copy; {new Date().getFullYear()} Medora Healthcare. All rights reserved.
+            &copy; {new Date().getFullYear()} Mume Care. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-white/40">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

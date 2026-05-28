@@ -7,28 +7,28 @@ import { cn } from '@/lib/utils';
 
 const faqs = [
   {
-    question: 'How do you match caregivers with clients?',
-    answer: 'We take a personalized approach to matching. Our care coordinators assess your loved one is needs, personality, preferences, and schedule. We then introduce caregivers who are not only qualified but also compatible. You will have the opportunity to meet potential caregivers before making a decision, ensuring the perfect fit.',
+    question: "What is Mume Care's ambition?",
+    answer: 'MUME CARE aims to create a safer, warmer, and easier everyday life for people who need extra support and assistance. We strive to meet everyone with love, respect, and care while delivering professional and reliable services to our clients and their families.',
   },
   {
-    question: 'What qualifications do your caregivers have?',
-    answer: 'All Medora caregivers are licensed, insured, and undergo rigorous background checks. They complete our proprietary training program covering clinical skills, communication, empathy, and emergency response. Many hold specialized certifications in areas like dementia care, palliative care, and physical therapy assistance.',
+    question: 'What is your vision?',
+    answer: 'Our vision is to contribute to less loneliness, greater security, and improved quality of life in society. MUME CARE aims to be a daily source of support for elderly people, young individuals, and families in need of help, care, and relief.',
   },
   {
-    question: 'Can I change or adjust my care plan?',
-    answer: 'Absolutely. We understand that care needs evolve. You can adjust your care plan at any time — whether you need to increase hours, add specialized services, or modify the schedule. Simply contact your care coordinator, and we will make the changes, typically within 24-48 hours.',
+    question: 'Who do you want to help?',
+    answer: 'We want to support elderly people and everyone who needs extra assistance in everyday life. Through care, practical help, and social support, we aim to create safety, well-being, and joy in people’s lives while also giving relief to family caregivers.',
   },
   {
-    question: 'How does the 24/7 emergency support work?',
-    answer: 'Our emergency response team is available around the clock. Each client receives a dedicated emergency button that instantly alerts our team. We also use smart monitoring technology to detect unusual patterns. In an emergency, our team coordinates with local emergency services and notifies designated family members immediately.',
+    question: 'How do you work as a team?',
+    answer: 'At MUME CARE, we work together as a strong team focused on collaboration, respect, and excellent service. We support one another and do our very best to provide safe, professional, and compassionate assistance to all our clients.',
   },
   {
-    question: 'What areas do you serve?',
-    answer: 'Medora currently provides in-home care services across major metropolitan areas in 15 states. We are continuously expanding. To check availability in your area, please contact us or use the zip code lookup on our website. For areas outside our coverage, we can often recommend trusted partner agencies.',
+    question: 'Do you provide technical help too?',
+    answer: 'Yes. We offer simple technical assistance for common digital issues with phones, tablets, and computers. When needed, we also collaborate with trusted technical partners in the city for further examination and repairs.',
   },
   {
-    question: 'How is pricing structured?',
-    answer: 'Our pricing is transparent and customized based on your specific needs. Factors include the type of care, number of hours, and any specialized services. We offer flexible plans — from a few hours a week to round-the-clock care. Contact us for a free, no-obligation consultation and personalized quote.',
+    question: 'What does MUME CARE stand for?',
+    answer: 'M - Humanity, U - Development, M - Motivation, E - Empathy, C - Care, A - Responsibility, R - Respect, E - Engagement.',
   },
 ];
 
@@ -101,8 +101,8 @@ export function FAQ() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           tag="FAQ"
-          title="Questions families often ask"
-          description="Find answers to common questions about our services, caregivers, and care process."
+          title="Mume Care in brief"
+          description="Our services, vision, values, and approach to safe and compassionate everyday support."
           className="mb-16"
         />
 

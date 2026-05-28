@@ -5,10 +5,10 @@ import { GlassCard } from '@/components/GlassCard';
 import { staggerContainer, staggerItem, slideInLeft } from '@/animations/variants';
 
 const stats = [
-  { icon: Heart, value: '98%', label: 'Client Satisfaction', color: 'bg-[#5A9D3A]/20 text-[#5A9D3A]' },
-  { icon: TrendingUp, value: '15+', label: 'Years Experience', color: 'bg-[#76A83B]/20 text-[#76A83B]' },
-  { icon: Users, value: '150+', label: 'Expert Caregivers', color: 'bg-[#5A9D3A]/20 text-[#5A9D3A]' },
-  { icon: Award, value: '50+', label: 'Industry Awards', color: 'bg-[#7DBA3D]/20 text-[#7DBA3D]' },
+  { icon: Heart, value: 'M', label: 'Humanity', color: 'bg-[#5A9D3A]/20 text-[#5A9D3A]' },
+  { icon: TrendingUp, value: 'U', label: 'Development', color: 'bg-[#76A83B]/20 text-[#76A83B]' },
+  { icon: Users, value: 'M', label: 'Motivation', color: 'bg-[#5A9D3A]/20 text-[#5A9D3A]' },
+  { icon: Award, value: 'E', label: 'Empathy', color: 'bg-[#7DBA3D]/20 text-[#7DBA3D]' },
 ];
 
 export function About() {
@@ -82,9 +82,9 @@ export function About() {
             viewport={{ once: true, margin: '-100px' }}
           >
             <SectionHeading
-              tag="Our Story"
-              title="Bringing warmth & dignity to every home"
-              description="For over 15 years, Medora has been redefining what it means to provide exceptional care. We believe every person deserves to age with grace, surrounded by compassion and professional support."
+              tag="About Mume Care"
+              title="Experience-based care with people at the center"
+              description="Mume Care was founded by people with genuine experience from Norwegian healthcare and care services, including organizations such as the Municipality of Oslo, 2Care, Diakonhjemmet Home Care Services, and Ecura."
               align="left"
               className="mb-8"
             />
@@ -93,9 +93,9 @@ export function About() {
               variants={staggerItem}
               className="text-muted-foreground leading-relaxed mb-8"
             >
-              Our team of dedicated caregivers goes beyond medical assistance — we build genuine 
-              relationships, creating moments of joy and connection. From daily companionship to 
-              specialized recovery support, we treat your family like our own.
+              We started Mume Care because many elderly people and families need more time, stability,
+              and personal follow-up in everyday life. Our goal is to create security, strong relationships,
+              and practical support through familiar and trustworthy faces.
             </motion.p>
 
             {/* Stats Grid */}

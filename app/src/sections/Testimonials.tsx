@@ -7,25 +7,25 @@ import { cn } from '@/lib/utils';
 
 const testimonials = [
   {
-    name: 'Margaret Thompson',
-    role: 'Family Member',
+    name: 'Family Caregiver',
+    role: 'Relative',
     image: '/testimonial-1.jpg',
     rating: 5,
-    text: 'Medora transformed our experience with elderly care. Their caregivers are not just professionals — they became family. My mother looks forward to their visits every day, and I have complete peace of mind knowing she is in the best hands.',
+    text: 'Mume Care gives our family safety and peace in everyday life. We meet familiar faces, and communication is always warm, respectful, and reliable.',
   },
   {
-    name: 'Robert Chen',
+    name: 'Home Care Client',
     role: 'Client',
     image: '/testimonial-2.jpg',
     rating: 5,
-    text: 'After my surgery, I was worried about recovery at home. Medora recovery support team was incredible — patient, knowledgeable, and genuinely caring. They helped me regain my independence much faster than expected.',
+    text: 'I receive practical support at home and social companionship that makes daily life easier. The team listens, understands, and treats me with dignity.',
   },
   {
-    name: 'Sarah Williams',
-    role: 'Family Member',
+    name: 'Daughter of Client',
+    role: 'Relative',
     image: '/caregiver-1.jpg',
     rating: 5,
-    text: 'The wellness monitoring service gives our entire family peace of mind. We receive regular updates about dads health, and the emergency response team once detected an issue before it became serious. Truly life-saving service.',
+    text: 'Mume Care helps with errands, routines, and everyday needs while giving us as family caregivers much-needed relief and better balance.',
   },
 ];
 
@@ -71,8 +71,8 @@ export function Testimonials() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           tag="Testimonials"
-          title="Stories from families like yours"
-          description="Hear from the families and individuals whose lives have been touched by our compassionate care."
+          title="Stories from people we support"
+          description="Real experiences from clients and families who receive practical and compassionate everyday help."
           className="mb-16"
         />
 

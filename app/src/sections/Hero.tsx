@@ -117,7 +117,7 @@ export function Hero() {
             >
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium text-primary-600">
-                Trusted by 10,000+ families
+                Humanity, Respect, and Care
               </span>
             </motion.div>
 
@@ -125,9 +125,9 @@ export function Hero() {
               variants={heroTextReveal}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-accent"
             >
-              Care that feels{' '}
+              Support that feels{' '}
               <span className="relative inline-block">
-                <span className="relative z-10 text-gradient-premium">like family</span>
+                <span className="relative z-10 text-gradient-premium">safe and personal</span>
                 <motion.svg
                   className="absolute -bottom-2 left-0 w-full"
                   viewBox="0 0 300 12"
@@ -159,8 +159,8 @@ export function Hero() {
               variants={heroTextReveal}
               className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Personalized healthcare services designed around your loved ones needs. 
-              Professional caregivers bringing comfort, dignity, and joy to every home.
+              Mume Care offers practical help, social companionship, and reliable everyday support for
+              elderly people, individuals living at home, and families who need relief.
             </motion.p>
 
             <motion.div
@@ -168,11 +168,11 @@ export function Hero() {
               className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <AnimatedButton size="lg" href="#cta">
-                Start Your Journey
+                We Want to Help
                 <ArrowRight className="w-5 h-5" />
               </AnimatedButton>
               <AnimatedButton variant="outline" size="lg" href="#services">
-                Explore Services
+                Explore Our Services
               </AnimatedButton>
             </motion.div>
 
@@ -207,7 +207,7 @@ export function Hero() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground mt-0.5">
-                  <span className="font-semibold text-accent">4.9/5</span> from 2,400+ reviews
+                  <span className="font-semibold text-accent">MUME CARE</span> support you can trust
                 </p>
               </div>
             </motion.div>
@@ -248,8 +248,8 @@ export function Hero() {
                 <Shield className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground">Licensed & Insured</p>
-                <p className="text-sm font-semibold text-accent">Fully Certified</p>
+                <p className="text-xs text-muted-foreground">Care and Safety</p>
+                <p className="text-sm font-semibold text-accent">Reliable Support</p>
               </div>
             </FloatingCard>
 
@@ -261,8 +261,8 @@ export function Hero() {
                 <Clock className="w-5 h-5 text-[#76A83B]" />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground">Available Around</p>
-                <p className="text-sm font-semibold text-accent">24/7 Support</p>
+                <p className="text-xs text-muted-foreground">Daily Assistance</p>
+                <p className="text-sm font-semibold text-accent">At Home and Outside</p>
               </div>
             </FloatingCard>
 
@@ -274,8 +274,8 @@ export function Hero() {
                 <Users className="w-5 h-5 text-[#5A9D3A]" />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground">Families Helped</p>
-                <p className="text-sm font-semibold text-accent">10,000+</p>
+                <p className="text-xs text-muted-foreground">Team Approach</p>
+                <p className="text-sm font-semibold text-accent">Respect and Engagement</p>
               </div>
             </FloatingCard>
 

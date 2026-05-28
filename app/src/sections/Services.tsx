@@ -7,39 +7,64 @@ import { cn } from '@/lib/utils';
 const services = [
   {
     icon: Home,
-    title: 'In-Home Care',
-    description: 'Professional caregivers providing compassionate support in the comfort of your own home. From daily assistance to specialized medical care.',
+    title: 'Morning Care and Daily Support',
+    description: 'Support for elderly people and individuals living at home with personal assistance and daily routines.',
     image: '/service-homecare.jpg',
     color: 'from-[#5A9D3A] to-[#0E2D5A]',
     bgColor: 'bg-[#5A9D3A]/20',
-    features: ['Personal care assistance', 'Medication management', 'Meal preparation', 'Light housekeeping'],
+    features: [
+      'Morning care and evening assistance',
+      'Help with dressing and personal hygiene',
+      'Showering and simple personal care',
+      'Meal preparation and serving coffee/tea',
+      'Social companionship and pleasant conversations',
+      'Accompanying clients to appointments, walks, and fresh air activities',
+      'Helping create safety and daily routines',
+    ],
   },
   {
     icon: HeartPulse,
-    title: 'Health Monitoring',
-    description: 'Advanced wellness tracking and proactive health management to keep your loved ones safe and healthy around the clock.',
+    title: 'Cleaning and Practical Assistance',
+    description: 'Practical home support that helps create a safe, tidy, and comfortable everyday environment.',
     image: '/feature-wellness.jpg',
     color: 'from-[#5A9D3A] to-[#0E2D5A]',
     bgColor: 'bg-[#5A9D3A]/20',
-    features: ['Vital signs tracking', 'Emergency alerts', 'Health reports', 'Family updates'],
+    features: [
+      'Cleaning floors, kitchens, and bathrooms',
+      'Tidying and organizing the home',
+      'Assistance with dishwashers and washing machines',
+      'Laundry and light tidying as needed',
+    ],
   },
   {
     icon: Accessibility,
-    title: 'Recovery Support',
-    description: 'Dedicated post-surgery and rehabilitation care to help patients recover faster and regain their independence.',
+    title: 'Shopping and Errands',
+    description: 'Reliable support for shopping and practical errands that make daily life easier.',
     image: '/service-recovery.jpg',
     color: 'from-[#76A83B] to-[#0E2D5A]',
     bgColor: 'bg-[#76A83B]/20',
-    features: ['Physical therapy aid', 'Mobility assistance', 'Wound care', 'Recovery tracking'],
+    features: [
+      'Grocery and food shopping',
+      'Picking up and sending packages',
+      'Help with purchases from stores or pharmacies',
+      'Tidying and organizing after shopping',
+      'Practical household assistance as needed',
+    ],
   },
   {
     icon: Brain,
-    title: 'Memory Care',
-    description: 'Specialized care for individuals with Alzheimer is and dementia, focused on maintaining dignity and quality of life.',
+    title: 'Simple Technical Assistance',
+    description: 'Basic help with common digital and technical challenges at home, with trusted partner support when needed.',
     image: '/about-couple.jpg',
     color: 'from-[#5A9D3A] to-[#0E2D5A]',
     bgColor: 'bg-[#5A9D3A]/20',
-    features: ['Cognitive activities', 'Safe environment', 'Routine management', 'Family support'],
+    features: [
+      'Mobile phones not functioning properly',
+      'Help with computers, iPads, and mobile phones',
+      'Screen replacement for phones, iPads, and PCs',
+      'Setup and basic technical support',
+      'Troubleshooting and assistance with digital issues',
+    ],
   },
 ];
 
@@ -101,8 +126,8 @@ function ServiceCard({
                 className="overflow-hidden"
               >
                 <div className="pt-4 border-t border-border">
-                  <p className="text-sm font-medium text-accent mb-3">What is included:</p>
-                  <div className="grid grid-cols-2 gap-2">
+                  <p className="text-sm font-medium text-accent mb-3">Included support:</p>
+                  <div className="grid grid-cols-1 gap-2">
                     {service.features.map((feature) => (
                       <div key={feature} className="flex items-center gap-2">
                         <Sparkles className="w-3.5 h-3.5 text-primary" />
@@ -119,7 +144,7 @@ function ServiceCard({
             className="flex items-center gap-2 mt-4 text-primary font-medium text-sm"
             whileHover={{ x: 5 }}
           >
-            {isExpanded ? 'Show less' : 'Learn more'}
+            {isExpanded ? 'Show less' : 'View details'}
             <motion.div
               animate={{ rotate: isExpanded ? 90 : 0 }}
               transition={{ duration: 0.3 }}
@@ -142,10 +167,10 @@ export function Services() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          tag="What We Offer"
+          tag="OUR SERVICES"
           tagClassName="bg-transparent px-0 py-0 rounded-none"
-          title="Services designed around your needs"
-          description="Explore our comprehensive range of healthcare services, each tailored to provide the highest quality care and support."
+          title="Support for Elderly People and Individuals Living at Home"
+          description="When needed, we also collaborate with trusted technical partners in the city for further examination and repairs."
           className="mb-16"
         />
 
