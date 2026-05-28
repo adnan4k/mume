@@ -11,8 +11,8 @@ const features = [
     description: 'Tailored care plans designed around each individual unique needs, preferences, and health requirements.',
     image: '/hero-caregiver.jpg',
     size: 'large',
-    color: 'from-rose-400/20 to-rose-600/10',
-    iconBg: 'bg-rose-50 text-rose-500',
+    color: 'from-[#5A9D3A]/25 to-[#5A9D3A]/10',
+    iconBg: 'bg-[#5A9D3A]/20 text-[#5A9D3A]',
   },
   {
     icon: Activity,
@@ -20,8 +20,8 @@ const features = [
     description: 'Advanced health tracking with real-time updates for families.',
     image: '/feature-wellness.jpg',
     size: 'medium',
-    color: 'from-primary-400/20 to-primary-600/10',
-    iconBg: 'bg-primary-50 text-primary-500',
+    color: 'from-[#76A83B]/25 to-[#76A83B]/10',
+    iconBg: 'bg-[#76A83B]/20 text-[#76A83B]',
   },
   {
     icon: Coffee,
@@ -29,32 +29,32 @@ const features = [
     description: 'Meaningful connections and shared moments throughout the day.',
     image: '/feature-companionship.jpg',
     size: 'medium',
-    color: 'from-amber-400/20 to-amber-600/10',
-    iconBg: 'bg-amber-50 text-amber-500',
+    color: 'from-[#76A83B]/25 to-[#76A83B]/10',
+    iconBg: 'bg-[#76A83B]/20 text-[#76A83B]',
   },
   {
     icon: Users,
     title: 'Family Support',
     description: 'Regular updates, open communication, and peace of mind for families.',
     size: 'small',
-    color: 'from-blue-400/20 to-blue-600/10',
-    iconBg: 'bg-blue-50 text-blue-500',
+    color: 'from-[#5A9D3A]/25 to-[#5A9D3A]/10',
+    iconBg: 'bg-[#5A9D3A]/20 text-[#5A9D3A]',
   },
   {
     icon: Stethoscope,
     title: 'Recovery Assistance',
     description: 'Post-surgery and rehabilitation support from experienced caregivers.',
     size: 'small',
-    color: 'from-green-400/20 to-green-600/10',
-    iconBg: 'bg-green-50 text-green-500',
+    color: 'from-[#76A83B]/25 to-[#76A83B]/10',
+    iconBg: 'bg-[#76A83B]/20 text-[#76A83B]',
   },
   {
     icon: Phone,
     title: 'Emergency Support',
     description: '24/7 emergency response team always ready to help.',
     size: 'small',
-    color: 'from-red-400/20 to-red-600/10',
-    iconBg: 'bg-red-50 text-red-500',
+    color: 'from-[#5A9D3A]/25 to-[#5A9D3A]/10',
+    iconBg: 'bg-[#5A9D3A]/20 text-[#5A9D3A]',
   },
 ];
 
@@ -71,7 +71,7 @@ function BentoCard({
     <motion.div
       variants={staggerItem}
       className={cn(
-        'group relative rounded-3xl overflow-hidden bg-white border border-white/60 shadow-premium cursor-pointer',
+        'group relative rounded-3xl overflow-hidden bg-white border border-border shadow-premium cursor-pointer',
         isLarge && 'md:col-span-2 md:row-span-2',
         isMedium && 'md:col-span-1 md:row-span-1',
         !isLarge && !isMedium && 'md:col-span-1'

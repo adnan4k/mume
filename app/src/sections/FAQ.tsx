@@ -49,7 +49,7 @@ function FAQItem({
         'rounded-2xl border transition-all duration-300',
         isOpen
           ? 'bg-white border-primary-200 shadow-premium'
-          : 'bg-white/60 border-transparent hover:bg-white hover:border-gray-100'
+          : 'bg-white/60 border-transparent hover:bg-white hover:border-border'
       )}
     >
       <button

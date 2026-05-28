@@ -70,8 +70,8 @@ export function Navbar() {
           className={cn(
             'mx-4 sm:mx-6 lg:mx-8 rounded-2xl transition-all duration-500',
             scrolled
-              ? 'bg-cream/80 backdrop-blur-2xl shadow-premium border border-white/30'
-              : 'bg-transparent'
+              ? 'bg-accent/90 backdrop-blur-2xl shadow-premium border border-accent/40'
+              : 'bg-accent/85 backdrop-blur-xl border border-accent/35'
           )}
         >
           <div className="px-4 sm:px-6 lg:px-8">
@@ -89,7 +89,7 @@ export function Navbar() {
                 <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-glow">
                   <Heart className="w-5 h-5 text-white" fill="white" />
                 </div>
-                <span className="text-xl font-bold text-accent tracking-tight">
+                <span className="text-xl font-bold text-white tracking-tight">
                   Medora
                 </span>
               </motion.a>
@@ -108,7 +108,7 @@ export function Navbar() {
                       'relative px-4 py-2 text-sm font-medium rounded-full transition-colors duration-300',
                       activeSection === link.href.slice(1)
                         ? 'text-primary'
-                        : 'text-muted-foreground hover:text-accent'
+                        : 'text-white/85 hover:text-white'
                     )}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
@@ -116,7 +116,7 @@ export function Navbar() {
                     {link.label}
                     {activeSection === link.href.slice(1) && (
                       <motion.div
-                        className="absolute inset-0 bg-primary-100 rounded-full -z-10"
+                        className="absolute inset-0 bg-white/10 rounded-full -z-10"
                         layoutId="activeNav"
                         transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                       />
@@ -134,14 +134,14 @@ export function Navbar() {
 
               {/* Mobile Menu Button */}
               <motion.button
-                className="lg:hidden p-2 rounded-xl hover:bg-primary-100 transition-colors"
+                className="lg:hidden p-2 rounded-xl hover:bg-white/10 transition-colors"
                 onClick={() => setMobileOpen(!mobileOpen)}
                 whileTap={{ scale: 0.95 }}
               >
                 {mobileOpen ? (
-                  <X className="w-6 h-6 text-accent" />
+                  <X className="w-6 h-6 text-white" />
                 ) : (
-                  <Menu className="w-6 h-6 text-accent" />
+                  <Menu className="w-6 h-6 text-white" />
                 )}
               </motion.button>
             </div>
@@ -170,7 +170,7 @@ export function Navbar() {
 
             {/* Menu Panel */}
             <motion.div
-              className="absolute top-24 left-4 right-4 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-premium-lg border border-white/40 p-6"
+              className="absolute top-24 left-4 right-4 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-premium-lg border border-border p-6"
               initial={{ opacity: 0, y: -20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -189,7 +189,7 @@ export function Navbar() {
                       'px-4 py-3 rounded-2xl text-base font-medium transition-colors',
                       activeSection === link.href.slice(1)
                         ? 'bg-primary-100 text-primary'
-                        : 'text-muted-foreground hover:bg-gray-50 hover:text-accent'
+                        : 'text-muted-foreground hover:bg-primary-50 hover:text-accent'
                     )}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -198,7 +198,7 @@ export function Navbar() {
                     {link.label}
                   </motion.a>
                 ))}
-                <div className="pt-4 border-t border-gray-100">
+                <div className="pt-4 border-t border-border">
                   <AnimatedButton
                     className="w-full"
                     onClick={() => handleNavClick('#cta')}

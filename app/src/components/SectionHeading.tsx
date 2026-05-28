@@ -9,6 +9,7 @@ interface SectionHeadingProps {
   align?: 'left' | 'center' | 'right';
   className?: string;
   titleClassName?: string;
+  tagClassName?: string;
   light?: boolean;
 }
 
@@ -19,6 +20,7 @@ export function SectionHeading({
   align = 'center',
   className,
   titleClassName,
+  tagClassName,
   light = false,
 }: SectionHeadingProps) {
   const alignClasses = {
@@ -42,7 +44,8 @@ export function SectionHeading({
             'inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4',
             light
               ? 'bg-white/20 text-white backdrop-blur-sm'
-              : 'bg-primary-100 text-primary-600'
+              : 'bg-primary-100 text-primary-600',
+            tagClassName
           )}
         >
           {tag}

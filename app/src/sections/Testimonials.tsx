@@ -105,7 +105,7 @@ export function Testimonials() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: i * 0.1 }}
                       >
-                        <Star className="w-5 h-5 text-yellow-400" fill="currentColor" />
+                        <Star className="w-5 h-5 text-primary" fill="currentColor" />
                       </motion.div>
                     ))}
                   </div>

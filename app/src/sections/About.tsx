@@ -5,10 +5,10 @@ import { GlassCard } from '@/components/GlassCard';
 import { staggerContainer, staggerItem, slideInLeft } from '@/animations/variants';
 
 const stats = [
-  { icon: Heart, value: '98%', label: 'Client Satisfaction', color: 'bg-rose-50 text-rose-500' },
-  { icon: TrendingUp, value: '15+', label: 'Years Experience', color: 'bg-primary-50 text-primary-500' },
-  { icon: Users, value: '150+', label: 'Expert Caregivers', color: 'bg-blue-50 text-blue-500' },
-  { icon: Award, value: '50+', label: 'Industry Awards', color: 'bg-amber-50 text-amber-500' },
+  { icon: Heart, value: '98%', label: 'Client Satisfaction', color: 'bg-[#5A9D3A]/20 text-[#5A9D3A]' },
+  { icon: TrendingUp, value: '15+', label: 'Years Experience', color: 'bg-[#76A83B]/20 text-[#76A83B]' },
+  { icon: Users, value: '150+', label: 'Expert Caregivers', color: 'bg-[#5A9D3A]/20 text-[#5A9D3A]' },
+  { icon: Award, value: '50+', label: 'Industry Awards', color: 'bg-[#7DBA3D]/20 text-[#7DBA3D]' },
 ];
 
 export function About() {

@@ -19,7 +19,7 @@ export function GlassCard({
   return (
     <motion.div
       className={cn(
-        'relative rounded-3xl bg-white/80 backdrop-blur-xl border border-white/40 shadow-premium',
+        'relative rounded-3xl bg-white/80 backdrop-blur-xl border border-border shadow-premium',
         {
           'p-4': padding === 'sm',
           'p-6': padding === 'md',
