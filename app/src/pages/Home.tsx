@@ -6,6 +6,7 @@ import { About } from '@/sections/About';
 import { BentoFeatures } from '@/sections/BentoFeatures';
 import { Statistics } from '@/sections/Statistics';
 import { Services } from '@/sections/Services';
+import { PricesOverview } from '@/sections/PricesOverview';
 import { Testimonials } from '@/sections/Testimonials';
 import { FAQ } from '@/sections/FAQ';
 import { CTA } from '@/sections/CTA';
@@ -39,6 +40,9 @@ export default function Home() {
         
         {/* Services Section */}
         <Services />
+
+        {/* Prices Overview Section */}
+        <PricesOverview />
         
         {/* Testimonials Section */}
         <Testimonials />
